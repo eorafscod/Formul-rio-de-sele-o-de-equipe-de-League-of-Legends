@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Formulário de seleção de equipe de League of Legends</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="text-center">Seleção de equipe de League of Legends</h1>
+            <p class="description text-center">
+                Escolha o seu campeão e junte-se ao nosso time campeão!
+            </p>
+        </header>
+        <form id="team-selection-form">
+            <div class="form-group">
+                <label for="summoner">Nome do Invocador</label>
+                <input type="text" name="summoner" id="summoner" class="form-control" placeholder="Digite o seu nome de invocador" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="champion">Campeão Favorito</label>
+                <input type="text" name="champion" id="champion" class="form-control" placeholder="Digite o seu campeão favorito" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position-dropdown">Qual posição você prefere jogar?</label>
+                <select id="position-dropdown" name="position" class="form-control" required>
+                    <option disabled selected value="">Selecione a posição preferida</option>
+                    <option value="top">Top</option>
+                    <option value="jungle">JG</option>
+                    <option value="mid">Mid</option>
+                    <option value="adc">ADC </option>
+                    <option value="support">Sup</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quão confiante você está em suas habilidades?</label>
+                <label><input name="skill-confidence" value="confident" type="radio" class="input-radio" checked>Confiante</label>
+                <label><input name="skill-confidence" value="average" type="radio" class="input-radio">Média</label>
+                <label><input name="skill-confidence" value="learning" type="radio" class="input-radio">Ainda aprendendo</label>
+            </div>
+
+            <div class="form-group">
+                <label for="team-motivation">Por que você quer se juntar ao nosso time campeão?</label>
+                <textarea id="team-motivation" class="input-textarea" name="motivation" placeholder="Conte-nos por que você é a adição perfeita ao nosso time..." spellcheck="false"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button">Junte-se à equipe</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
